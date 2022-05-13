@@ -33,7 +33,7 @@ class Two3d {
         this.engine.canvas.resizeByClientSize()   // 创建引擎实例
         this.scene = this.engine.sceneManager.activeScene
         this.scene.background.solidColor.setValue(0, 0, 0, 0)   //场景背景色
-        this.rootEntity = this.scene.createRootEntity('root') // Get root entity of current scene
+        this.rootEntity = this.scene.createRootEntity('root')  // 在场景中创建实体
     }
     initCamera() {
         let cameraEntity = this.rootEntity.createChild("camera_entity")
